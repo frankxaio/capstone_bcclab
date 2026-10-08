@@ -1,0 +1,10 @@
+# Python 3.11. Install CPU torch separately; see README.md.
+pytest==9.1.1
+numpy==1.26.4
+pandas==2.3.0
+opencv-python==4.11.0.86
+einops==0.8.1
+scikit-image==0.25.2
+scikit-learn==1.7.0
+PyYAML==6.0.2
+tqdm==4.67.1

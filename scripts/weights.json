@@ -1,0 +1,78 @@
+{
+  "repository": "Ryo8713/BadmintonAI-End2End",
+  "revision": "78abb37479f329ff91a5f0ee8c4482620c3f0b53",
+  "files": [
+    {
+      "path": "HitNet/hitnet.pth",
+      "sha256": "1024ce05e041e510bcf2db3b1b9a7f8ca67f1cf1033255fbdf5a5f7a38abbff5",
+      "size": 8997994,
+      "required": false
+    },
+    {
+      "path": "HitNet/hitnet_recall.pth",
+      "sha256": "2a7393afc98cc32cd423bf1fefc132f70fb63aae9a7577dd73c1be924d958e2e",
+      "size": 8999740,
+      "required": true
+    },
+    {
+      "path": "TemPose/model.pt",
+      "sha256": "1632b0af559489c68fef5bae50db26dbdfce3968edc0b2c50097390fb5805548",
+      "size": 19963790,
+      "required": true
+    },
+    {
+      "path": "TemPose/model_TF.pt",
+      "sha256": "c4180f6d2e0f758487fd91839f30d256d621904cfbaef0ef23da686c276f7234",
+      "size": 6876536,
+      "required": false
+    },
+    {
+      "path": "TrackNetV3/exp/model_best.pt",
+      "sha256": "057abac8db16c066c12738f512db64f082ebbfee288720efe1773fc30d11998c",
+      "size": 181830085,
+      "required": true
+    },
+    {
+      "path": "TrackNetV3/exp/model_cur.pt",
+      "sha256": "a532e2cf3c1c7305972cc5dc00c45b8707f9a6106cba78b96e676a58d34d2d59",
+      "size": 181829509,
+      "required": false
+    },
+    {
+      "path": "TrackNetV3/exp/model_last.pt",
+      "sha256": "76517fa761afc95a4a974517f57ea7b1c743759cca9293089b82bd925494b673",
+      "size": 181830149,
+      "required": false
+    },
+    {
+      "path": "rally_clipping/weight/img_md1.pt",
+      "sha256": "be045c23ab1d66b34fc696f8b6664d715b5ca1a18ed67a7b43995cd34fa7ee05",
+      "size": 44781702,
+      "required": false
+    },
+    {
+      "path": "rally_clipping/weight/img_md2.pt",
+      "sha256": "6db2d3b3a0697574524741a6ea311c83accc7dcf5566b2944f4fa57855f14a44",
+      "size": 44781702,
+      "required": false
+    },
+    {
+      "path": "rally_clipping/weight/img_md3.pt",
+      "sha256": "58563b9f376f442cdfb7cbca3a43da1733aac298e021fe3d8bd20c7437607aaf",
+      "size": 44781702,
+      "required": true
+    },
+    {
+      "path": "rally_clipping/weight/img_md4.pt",
+      "sha256": "f21376720f491b0e572e30a3ad1aa2f56724497ec850b525e1e96c55a303d95d",
+      "size": 44781702,
+      "required": false
+    },
+    {
+      "path": "team_classifier/yolov8s.pt",
+      "sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a",
+      "size": 22588772,
+      "required": true
+    }
+  ]
+}

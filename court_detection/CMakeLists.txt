@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(badminton_court_detection LANGUAGES CXX)
+find_package(OpenCV 4 REQUIRED COMPONENTS core imgproc imgcodecs videoio highgui calib3d)
+file(GLOB DETECTOR_SOURCES CONFIGURE_DEPENDS "src/*.cpp")
+add_executable(court-detection ${DETECTOR_SOURCES})
+target_compile_features(court-detection PRIVATE cxx_std_11)
+target_include_directories(court-detection PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(court-detection PRIVATE ${OpenCV_LIBS})

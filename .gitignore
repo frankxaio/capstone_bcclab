@@ -1,0 +1,28 @@
+# video data
+*.mp4
+
+__pycache__/
+final_result/
+results/
+npy/
+videos/
+traj/
+clips/
+venv/
+.pytest_cache/
+.venv/
+court_detection/build/
+*.download
+.venv-pipeline/
+
+# Downloaded models and local distribution archives
+*.pt
+*.pth
+*.onnx
+*.zip
+*.tar.gz
+
+# Local credentials and environments
+.env
+.env.*
+.venv*/
