@@ -65,6 +65,44 @@ The full video pipeline is an optional extension with its own [setup guide](docs
 [Student packaging](docs/RELEASE.md) explains how to build a lightweight classroom ZIP.
 [Release validation](docs/VALIDATION.md) lists the tested environments and the parts of the pipeline that are still untested.
 
+## Roadmap
+
+The required track follows the four milestones in [the assignment](docs/ASSIGNMENT.md#required-milestones).
+Inside each milestone, work in the [suggested order](#suggested-order). Check each step with
+`pytest --ex <id>` before you move on.
+
+```mermaid
+flowchart TD
+    S0["Setup<br/>Python 3.11 venv, CPU PyTorch<br/>check_setup.py passes"]
+
+    subgraph M1["Milestone 1: Environment and warm-up"]
+        W["Ex 1.3 · 3.10a · 3.8a · 2.5a · 3.3a · 3.1a<br/>short NumPy and logic functions"]
+    end
+
+    subgraph M2["Milestone 2: Data processing"]
+        D["Ex 1.1 · 2.1 · 3.1b · 3.2a-d · 3.3b · 1.5a-b · 1.7<br/>coordinate systems, frame offsets, padding"]
+    end
+
+    subgraph M3["Milestone 3: Models and training"]
+        A["Ex 3.4<br/>attention and Transformer encoder"]
+        B["Ex 3.5 + 3.6b<br/>TemPose forward pass"]
+        C["Ex 1.4 TrackNet · Ex 2.2 HitNet"]
+        T["Training and inference loops<br/>Ex 1.5c · 3.6a · 3.7 · 2.3 · 1.2 · 1.6 · 2.4 · 2.5b"]
+        A --> B --> C --> T
+    end
+
+    subgraph M4["Milestone 4: Integration logic"]
+        I["Ex 3.8b · 3.9 · 3.10b<br/>who hit each stroke, merging hit events"]
+    end
+
+    R["Submit<br/>all 43 exercise IDs PASS, no SKIP<br/>source, pytest output, report"]
+    X["Optional extension: full video run<br/>GPU, weights, run_pipeline.py, evaluate.py"]
+
+    S0 --> W --> D --> A
+    T --> I --> R
+    R -.-> X
+```
+
 ## The pipeline
 
 The exercises follow the three stages of the system. `main.py` runs them as steps 1 to 7.
