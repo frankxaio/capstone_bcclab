@@ -93,7 +93,15 @@ def project(H: np.ndarray, P_prime: np.ndarray):
     # Apply homography H to homogeneous points P_prime (3, N) and return the
     # Cartesian result (2, N): multiply, then divide x and y by w (last row).
     # ============================================================================
-    raise NotImplementedError("TODO [Ex 3.1a]")
+    projected_points = H @ P_prime
+
+    x = projected_points[0,:]/projected_points[2,:]
+    y = projected_points[1,:]/projected_points[2,:]
+
+    result = np.vstack((x,y))
+    return result
+
+    #raise NotImplementedError("TODO [Ex 3.1a]")
 
 def get_court_info(court_txt):
     '''
